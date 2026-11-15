@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nibbo: a $249 legged pet robot that watches over your home</title>
+<meta name="description" content="Nibbo: palm-sized autonomous four-legged pet robot. Interactive 3D CAD model with every component, layers, labels, X-ray and exploded view.">
+<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect x=%224%22 y=%228%22 width=%2224%22 height=%2216%22 rx=%228%22 fill=%22%23ff7a59%22/%3E%3C/svg%3E">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head>
+<body>
+<div id="app">
+  <div id="viewer"><div id="labels"></div><div id="loading">Loading Nibbo&hellip;</div></div>
+
+  <header class="top">
+    <div class="brand"><span class="mark"><i></i><i></i></span><b>Nibbo</b><span class="ver">CAD v0.1 &middot; design review</span></div>
+    <p class="tag">A palm-sized four-legged pet that walks, plays and naps in its own bed, and keeps an eye on your home while you're out. Target retail $249.</p>
+  </header>
+
+  <aside class="panel left">
+    <h3>Views</h3>
+    <div class="btns" id="views">
+      <button data-view="34">3/4</button><button data-view="front">Front</button><button data-view="side">Side</button>
+      <button data-view="back">Back</button><button data-view="top">Top</button><button data-view="under">Under</button>
+    </div>
+    <h3>Display</h3>
+    <div class="btns">
+      <button id="xray">X-ray</button><button id="lbls" class="on">Labels</button><button id="demo">Walk</button>
+    </div>
+    <label class="slider">Explode <input id="explode" type="range" min="0" max="1" step="0.01" value="0"></label>
+    <h3>Layers</h3>
+    <div id="layers"></div>
+    <div class="stats" id="stats"></div>
+  </aside>
+
+  <aside class="panel right">
+    <div class="tabs"><button data-tab="parts" class="on">Parts</button><button data-tab="concept">Concept</button><button data-tab="bom">BOM</button><button data-tab="build">Build</button></div>
+    <section id="tab-parts" class="tab on">
+      <h3>Components <span id="ncomp"></span></h3>
+      <div id="clist"></div>
+    </section>
+    <section id="tab-concept" class="tab">
+      <h3>The idea</h3>
+      <p>A pet first, a gadget second. Nibbo is a little loaf-shaped creature on four legs with a face full of expression. It trots over when you come home, flops over to be petted and walks back to its bed to sleep and charge.</p>
+      <p>Being useful comes on top: its camera and mic make it a home check-in you can drive from your phone.</p>
+      <h3>Why it wins</h3>
+      <ul>
+        <li><b>Legs feel alive.</b> Wheels read as an appliance; a trotting, stretching, sitting body reads as a creature. That is the emotional hook that makes people buy one, and buy a second as a gift.</li>
+        <li><b>Plugs in with its tail.</b> No charging port or docking arms. It backs into its bed, the tail lands on two contacts, and it naps. The bedtime routine is both the charging system and part of the personality.</li>
+        <li><b>Cheap where it counts.</b> 8 identical hobby servos, one ESP32-S3 board and 6 molded tools. About $62 of parts at volume, against a $249 price.</li>
+        <li><b>Few parts.</b> 15 molded pieces, and every leg is the same 3 parts.</li>
+      </ul>
+      <h3>Hero features</h3>
+      <ul>
+        <li><b>Eyes that emote</b>: the 1.47" face shows blinks, moods, sleepiness, timers and weather.</li>
+        <li><b>Pet it</b>: a touch pad on its back plus the IMU. It leans in, purrs, and rolls its eyes when picked up.</li>
+        <li><b>Home check-in</b>: a 160&deg; camera streams to the phone app. Send it to "go look at the stove" or "find the cat", and get person and pet alerts.</li>
+        <li><b>Hears its name</b>: on-device wake word and voice reminders. It walks over to deliver them.</li>
+        <li><b>Autonomous</b>: ToF and camera for obstacles, cliff sensors so it won't walk off tables, and it puts itself to bed at low battery.</li>
+      </ul>
+    </section>
+    <section id="tab-bom" class="tab">
+      <div class="totals"><div><b id="bom-v">$&ndash;</b>volume BOM / robot<br><small>10k units, landed, incl. bed, box, assembly</small></div><div><b id="bom-p">$&ndash;</b>prototype BOM<br><small>one unit, retail parts today</small></div></div>
+      <h3>Volume BOM</h3>
+      <table id="bom-table"></table>
+      <p class="fine">Lines marked <i>est</i> are engineering estimates that need supplier quotes. Every price, source and link is in <a href="https://github.com/wjb000/nibbo-pawbot/blob/main/BOM.md">BOM.md</a>. Tooling and certification are not included in the per-unit figure; see Build.</p>
+    </section>
+    <section id="tab-build" class="tab">
+      <h3>Production (DFM)</h3>
+      <ul>
+        <li><b>6 robot tools + 1 bed tool.</b> PC/ABS top shell and chassis, smoked PC visor, PA6-GF30 thigh, shin and pushrod (each a family mold with 4 cavities), and a TPU tail overmolded on its harness. The TPU foot is 2-shot onto the shin.</li>
+        <li>2.0 mm walls (1.8 mm in production), 1&deg; draft on the shells, and a single straight-pull parting line at the split plane. Only the chassis tail socket and the ToF window need side actions.</li>
+        <li>Tooling estimate is $55&ndash;80k for P20 steel tools. Prototype everything on an FDM printer first: the STLs are in <code>cad/stl/</code>.</li>
+        <li>No USB port and no sealed openings. It charges through the tail, updates over Wi-Fi, and is factory-flashed on test pads through a bed-of-nails fixture.</li>
+      </ul>
+      <h3>Assembly (about 12 min)</h3>
+      <ol>
+        <li>Press the 8 servos into the chassis towers (tabs drop into slots) and add 16 M2 screws.</li>
+        <li>Drop the 2S pack into the belly cradle and snap in the speaker, cliff sensors and tail plug.</li>
+        <li>Fit the main board onto 4 standoffs and plug in the 8 servo leads, battery, display and camera FPCs.</li>
+        <li>Fit the visor, then close the top shell with 4 screws (the touch foil is pre-applied).</li>
+        <li>Zero the servos with the jig and fit the horns, thighs, pushrods and shins (pins plus 4 screws per leg).</li>
+        <li>Run the end-of-line test: it stands, walks 1 m, docks, and runs a camera and audio check.</li>
+      </ol>
+      <p class="fine">More detail is in <a href="https://github.com/wjb000/nibbo-pawbot/blob/main/docs/PRODUCTION.md">PRODUCTION.md</a>, <a href="https://github.com/wjb000/nibbo-pawbot/blob/main/docs/TORQUE.md">TORQUE.md</a> (actuator sizing) and the CAD in <a href="https://github.com/wjb000/nibbo-pawbot/tree/main/cad">cad/</a>.</p>
+    </section>
+  </aside>
+
+  <div id="info" class="info hidden"><b id="info-t"></b><span id="info-k"></span><p id="info-d"></p></div>
+  <footer class="note">Design model for review: not yet built or tested. Bought parts are modelled from datasheet dimensions.
+    <a href="https://github.com/wjb000/nibbo-pawbot">Source, CAD (STEP/STL) and BOM on GitHub</a></footer>
+</div>
+<script type="module" src="assets/viewer.js?v=3"></script>
+</body>
+</html>
