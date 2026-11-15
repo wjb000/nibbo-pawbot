@@ -1,0 +1,260 @@
+{
+ "volume_total": 62.31,
+ "proto_total": 172.38,
+ "volume": [
+  {
+   "item": "Micro servo, MG92B-class metal gear, 3.5 kg-cm, 4th wire for angle feedback",
+   "qty": 8,
+   "unit": 2.9,
+   "src": "est (MG90S floor $0.76 @10k, Alibaba)",
+   "url": "https://www.alibaba.co.th/product-detail/OEM-Factory-MG90S-Steering-Gear-9g_1601709710911.html"
+  },
+  {
+   "item": "ESP32-S3-WROOM-1-N16R8 module",
+   "qty": 1,
+   "unit": 3.55,
+   "src": "LCSC 1,300+",
+   "url": "https://www.lcsc.com/product-image/C2913202.html"
+  },
+  {
+   "item": "1.47\" IPS LCD 172x320, ST7789, bare panel + FPC",
+   "qty": 1,
+   "unit": 2.1,
+   "src": "est (module: Waveshare $9.31 @100)",
+   "url": "https://www.waveshare.com/1.47inch-lcd-module.htm"
+  },
+  {
+   "item": "Camera OV2640 2 MP, 160 deg, 24-pin DVP",
+   "qty": 1,
+   "unit": 2.8,
+   "src": "Alibaba wholesale range $2.80-5.95",
+   "url": "https://www.alibaba.com/showroom/ov2640-camera-module.html"
+  },
+  {
+   "item": "ToF sensor VL53L1CXV0FY/1",
+   "qty": 1,
+   "unit": 2.5,
+   "src": "LCSC 1,000+ (CNY 18.11)",
+   "url": "https://lcsc.com/product-detail/Position-Sensors_STMicroelectronics-VL53L1CXV0FY-1_C190004.html"
+  },
+  {
+   "item": "IMU ICM-42670-P",
+   "qty": 1,
+   "unit": 1.26,
+   "src": "LCSC 1,000+",
+   "url": "https://www.lcsc.com/product-image/C3288646.html"
+  },
+  {
+   "item": "I2S class-D amp MAX98357AETE+T",
+   "qty": 1,
+   "unit": 0.81,
+   "src": "LCSC 1,000+",
+   "url": "https://www.lcsc.com/product-image/C910544.html"
+  },
+  {
+   "item": "I2S MEMS microphone",
+   "qty": 1,
+   "unit": 0.4,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Speaker 20 mm 8 ohm 1 W",
+   "qty": 1,
+   "unit": 0.35,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "2S USB boost charger IC IP2326",
+   "qty": 1,
+   "unit": 0.29,
+   "src": "LCSC 1,000+",
+   "url": "https://www.lcsc.com/product-detail/C2832094.html"
+  },
+  {
+   "item": "2S protection IC + dual MOSFET",
+   "qty": 1,
+   "unit": 0.25,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "6 V / 5 A sync buck IC + inductor (servo rail)",
+   "qty": 1,
+   "unit": 0.7,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "3.3 V buck",
+   "qty": 1,
+   "unit": 0.2,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Cliff sensors, IR reflective (ITR20001-class)",
+   "qty": 2,
+   "unit": 0.1,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Li-ion 18650 2500 mAh cell (tier-1 China)",
+   "qty": 2,
+   "unit": 1.7,
+   "src": "est (retail Samsung 25R $4.99)",
+   "url": "https://www.18650batterystore.com/products/samsung-25r-18650"
+  },
+  {
+   "item": "Main PCB 4-layer 42 x 56 mm, SMT assembly, passives, connectors",
+   "qty": 1,
+   "unit": 4.5,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Tail harness, gold pads; bed pogo pins",
+   "qty": 1,
+   "unit": 0.6,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Bed PCB: USB-C in, IR beacon LED",
+   "qty": 1,
+   "unit": 0.7,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Molded parts, robot: 15 pieces, 6 tools (PC/ABS, PA6-GF30, TPU, smoked PC)",
+   "qty": 1,
+   "unit": 4.8,
+   "src": "est (~254 g resin + press time)",
+   "url": ""
+  },
+  {
+   "item": "Molded bed (ABS, coring added for production)",
+   "qty": 1,
+   "unit": 1.5,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Screws (24 x M2), copper touch foil, labels",
+   "qty": 1,
+   "unit": 0.45,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "USB-C cable",
+   "qty": 1,
+   "unit": 0.55,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Packaging + quick-start card",
+   "qty": 1,
+   "unit": 1.8,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Final assembly + test labour (~12 min)",
+   "qty": 1,
+   "unit": 2.4,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Freight + duty allowance",
+   "qty": 1,
+   "unit": 3.0,
+   "src": "est",
+   "url": ""
+  }
+ ],
+ "proto": [
+  {
+   "item": "TowerPro MG92B servo, 4-pack (Banggood)",
+   "qty": 2,
+   "unit": 27.99,
+   "src": "Banggood",
+   "url": "https://usa.banggood.com/4X-Towerpro-MG92B-Robot-13_8g-3_5KG-Torque-Mental-Gear-Digital-Servo-reviews-p981038.html"
+  },
+  {
+   "item": "Seeed XIAO ESP32S3 Sense (ESP32-S3 + OV2640 camera + mic)",
+   "qty": 1,
+   "unit": 13.99,
+   "src": "Seeed",
+   "url": "https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html"
+  },
+  {
+   "item": "Waveshare 1.47\" LCD module 172x320",
+   "qty": 1,
+   "unit": 9.59,
+   "src": "Waveshare",
+   "url": "https://www.waveshare.com/1.47inch-lcd-module.htm"
+  },
+  {
+   "item": "Pololu VL53L1X ToF carrier",
+   "qty": 1,
+   "unit": 22.95,
+   "src": "Pololu",
+   "url": "https://www.pololu.com/product/3415"
+  },
+  {
+   "item": "Adafruit MAX98357A I2S amp",
+   "qty": 1,
+   "unit": 5.95,
+   "src": "Adafruit",
+   "url": "https://www.adafruit.com/product/3006"
+  },
+  {
+   "item": "Pololu D36V28F6 6 V 2.7 A step-down",
+   "qty": 1,
+   "unit": 24.95,
+   "src": "Pololu",
+   "url": "https://www.pololu.com/product/3783/specs"
+  },
+  {
+   "item": "IP2326 2S USB-C charger module",
+   "qty": 1,
+   "unit": 1.99,
+   "src": "AliExpress",
+   "url": "https://www.aliexpress.com/i/3256808965113588.html"
+  },
+  {
+   "item": "Samsung 25R 18650 2500 mAh",
+   "qty": 2,
+   "unit": 4.99,
+   "src": "18650BatteryStore",
+   "url": "https://www.18650batterystore.com/products/samsung-25r-18650"
+  },
+  {
+   "item": "2S BMS board, 6-axis IMU board, 2 TCRT5000 cliff boards, 20 mm speaker",
+   "qty": 1,
+   "unit": 9.0,
+   "src": "est (AliExpress)",
+   "url": ""
+  },
+  {
+   "item": "Filament: ~300 g PETG + ~40 g TPU",
+   "qty": 1,
+   "unit": 8.0,
+   "src": "est",
+   "url": ""
+  },
+  {
+   "item": "Screws, wire, perfboard, pogo pins, USB-C breakout, copper tape",
+   "qty": 1,
+   "unit": 10.0,
+   "src": "est",
+   "url": ""
+  }
+ ]
+}

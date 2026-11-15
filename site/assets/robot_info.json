@@ -1,0 +1,1127 @@
+{
+ "summary": {
+  "height_mm": 133,
+  "length_mm": 178,
+  "width_mm": 114,
+  "total_mass_g": 489.4,
+  "molded_parts": 16,
+  "unique_tools": 7,
+  "servos": 8,
+  "com_mm": [
+   -3.5,
+   0.1,
+   79.9
+  ]
+ },
+ "joints": {
+  "hip_fl": {
+   "node": "link:thigh_fl",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "limits_deg": [
+    -70,
+    70
+   ]
+  },
+  "knee_fl": {
+   "node": "link:shin_fl",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "limits_deg": [
+    -60,
+    60
+   ]
+  },
+  "hip_fr": {
+   "node": "link:thigh_fr",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "limits_deg": [
+    -70,
+    70
+   ]
+  },
+  "knee_fr": {
+   "node": "link:shin_fr",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "limits_deg": [
+    -60,
+    60
+   ]
+  },
+  "hip_rl": {
+   "node": "link:thigh_rl",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "limits_deg": [
+    -70,
+    70
+   ]
+  },
+  "knee_rl": {
+   "node": "link:shin_rl",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "limits_deg": [
+    -60,
+    60
+   ]
+  },
+  "hip_rr": {
+   "node": "link:thigh_rr",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "limits_deg": [
+    -70,
+    70
+   ]
+  },
+  "knee_rr": {
+   "node": "link:shin_rr",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "limits_deg": [
+    -60,
+    60
+   ]
+  }
+ },
+ "items": {
+  "part:top_shell": {
+   "title": "Top shell",
+   "desc": "One molded shell: back, brow and the two leaf ears. Mic port; copper-foil touch pad inside. 4 screws to the chassis.",
+   "group": "shell",
+   "color": "#f1ece3",
+   "explode": [
+    0,
+    0,
+    70
+   ],
+   "kind": "molded",
+   "material": "PC/ABS",
+   "mass_g": 41.6
+  },
+  "part:chassis": {
+   "title": "Chassis",
+   "desc": "The structural tub: four servo towers, battery cradle, PCB standoffs, speaker grille, cliff windows, tail socket. Everything mounts to this one part.",
+   "group": "structure",
+   "color": "#4a4f58",
+   "explode": [
+    0,
+    0,
+    0
+   ],
+   "kind": "molded",
+   "material": "PC/ABS",
+   "mass_g": 77.2
+  },
+  "part:visor": {
+   "title": "Face visor",
+   "desc": "Smoked polycarbonate window over the eyes, camera and ToF. IR-transparent ink patch over the ToF.",
+   "group": "shell",
+   "color": "#1a1f26",
+   "explode": [
+    45,
+    0,
+    25
+   ],
+   "kind": "molded",
+   "material": "PC (smoked)",
+   "mass_g": 4.5
+  },
+  "part:tail": {
+   "title": "Tail (charging plug)",
+   "desc": "Soft TPU tail overmolded on a 2-wire harness. Its tip holds the charging pads: Nibbo backs into its bed and plugs in with its tail.",
+   "group": "shell",
+   "color": "#ff7a59",
+   "explode": [
+    -45,
+    0,
+    10
+   ],
+   "kind": "molded",
+   "material": "TPU 85A",
+   "mass_g": 7.0
+  },
+  "part:thigh_fl": {
+   "title": "Thigh",
+   "desc": "Same part on all four legs (symmetric). Bolts to the hip horn; the knee pushrod runs along its back edge. Glass-filled nylon.",
+   "group": "legs",
+   "color": "#e6dfd3",
+   "explode": [
+    10,
+    35,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 17.1
+  },
+  "part:shin_fl": {
+   "title": "Shin",
+   "desc": "Same part on all four legs. Tapered blade, crank above the knee for the pushrod, TPU foot ball overmolded (2-shot).",
+   "group": "legs",
+   "color": "#d6cec1",
+   "explode": [
+    10,
+    50,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 7.2
+  },
+  "part:foot_fl": {
+   "title": "Foot ball (TPU overmold)",
+   "desc": "Grippy, quiet 15 mm TPU ball molded onto the shin: no slipping on wood floors, no clicking.",
+   "group": "legs",
+   "color": "#ff7a59",
+   "explode": [
+    10,
+    50,
+    0
+   ],
+   "kind": "molded",
+   "material": "TPU 85A",
+   "mass_g": 1.6
+  },
+  "part:pushrod_fl": {
+   "title": "Knee pushrod",
+   "desc": "1:1 link from the knee servo horn (in the body) to the shin crank, so the knee servo lives in the body instead of the leg.",
+   "group": "legs",
+   "color": "#7b828d",
+   "explode": [
+    10,
+    60,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 1.8
+  },
+  "part:thigh_fr": {
+   "title": "Thigh",
+   "desc": "Same part on all four legs (symmetric). Bolts to the hip horn; the knee pushrod runs along its back edge. Glass-filled nylon.",
+   "group": "legs",
+   "color": "#e6dfd3",
+   "explode": [
+    10,
+    -35,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 17.1
+  },
+  "part:shin_fr": {
+   "title": "Shin",
+   "desc": "Same part on all four legs. Tapered blade, crank above the knee for the pushrod, TPU foot ball overmolded (2-shot).",
+   "group": "legs",
+   "color": "#d6cec1",
+   "explode": [
+    10,
+    -50,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 7.2
+  },
+  "part:foot_fr": {
+   "title": "Foot ball (TPU overmold)",
+   "desc": "Grippy, quiet 15 mm TPU ball molded onto the shin: no slipping on wood floors, no clicking.",
+   "group": "legs",
+   "color": "#ff7a59",
+   "explode": [
+    10,
+    -50,
+    0
+   ],
+   "kind": "molded",
+   "material": "TPU 85A",
+   "mass_g": 1.6
+  },
+  "part:pushrod_fr": {
+   "title": "Knee pushrod",
+   "desc": "1:1 link from the knee servo horn (in the body) to the shin crank, so the knee servo lives in the body instead of the leg.",
+   "group": "legs",
+   "color": "#7b828d",
+   "explode": [
+    10,
+    -60,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 1.8
+  },
+  "part:thigh_rl": {
+   "title": "Thigh",
+   "desc": "Same part on all four legs (symmetric). Bolts to the hip horn; the knee pushrod runs along its back edge. Glass-filled nylon.",
+   "group": "legs",
+   "color": "#e6dfd3",
+   "explode": [
+    -10,
+    35,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 17.1
+  },
+  "part:shin_rl": {
+   "title": "Shin",
+   "desc": "Same part on all four legs. Tapered blade, crank above the knee for the pushrod, TPU foot ball overmolded (2-shot).",
+   "group": "legs",
+   "color": "#d6cec1",
+   "explode": [
+    -10,
+    50,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 7.2
+  },
+  "part:foot_rl": {
+   "title": "Foot ball (TPU overmold)",
+   "desc": "Grippy, quiet 15 mm TPU ball molded onto the shin: no slipping on wood floors, no clicking.",
+   "group": "legs",
+   "color": "#ff7a59",
+   "explode": [
+    -10,
+    50,
+    0
+   ],
+   "kind": "molded",
+   "material": "TPU 85A",
+   "mass_g": 1.6
+  },
+  "part:pushrod_rl": {
+   "title": "Knee pushrod",
+   "desc": "1:1 link from the knee servo horn (in the body) to the shin crank, so the knee servo lives in the body instead of the leg.",
+   "group": "legs",
+   "color": "#7b828d",
+   "explode": [
+    -10,
+    60,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 1.8
+  },
+  "part:thigh_rr": {
+   "title": "Thigh",
+   "desc": "Same part on all four legs (symmetric). Bolts to the hip horn; the knee pushrod runs along its back edge. Glass-filled nylon.",
+   "group": "legs",
+   "color": "#e6dfd3",
+   "explode": [
+    -10,
+    -35,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 17.1
+  },
+  "part:shin_rr": {
+   "title": "Shin",
+   "desc": "Same part on all four legs. Tapered blade, crank above the knee for the pushrod, TPU foot ball overmolded (2-shot).",
+   "group": "legs",
+   "color": "#d6cec1",
+   "explode": [
+    -10,
+    -50,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 7.2
+  },
+  "part:foot_rr": {
+   "title": "Foot ball (TPU overmold)",
+   "desc": "Grippy, quiet 15 mm TPU ball molded onto the shin: no slipping on wood floors, no clicking.",
+   "group": "legs",
+   "color": "#ff7a59",
+   "explode": [
+    -10,
+    -50,
+    0
+   ],
+   "kind": "molded",
+   "material": "TPU 85A",
+   "mass_g": 1.6
+  },
+  "part:pushrod_rr": {
+   "title": "Knee pushrod",
+   "desc": "1:1 link from the knee servo horn (in the body) to the shin crank, so the knee servo lives in the body instead of the leg.",
+   "group": "legs",
+   "color": "#7b828d",
+   "explode": [
+    -10,
+    -60,
+    0
+   ],
+   "kind": "molded",
+   "material": "PA6-GF30",
+   "mass_g": 1.8
+  },
+  "part:bed": {
+   "title": "Charging bed",
+   "desc": "Oval bed Nibbo walks into and lies down in. Raised back holds the spring contacts and IR beacon; USB-C at the back.",
+   "group": "dock",
+   "color": "#d8d1c4",
+   "explode": [
+    0,
+    -40,
+    0
+   ],
+   "kind": "molded",
+   "material": "ABS",
+   "mass_g": 247.1
+  },
+  "elec:servo_hip_fl": {
+   "title": "Hip servo (MG92B-class)",
+   "desc": "MG92B-class metal-gear micro servo, 3.5 kg-cm (0.34 N-m) stall at 6 V, 0.08 s/60 deg, 13.8 g. Production version ordered with a 4th wire on the potentiometer wiper so the ESP32 reads joint angle. Peak need is 0.15 N-m (self-righting), trot needs about 0.1 N-m: see docs/TORQUE.md.",
+   "group": "actuators",
+   "color": "#2d3138",
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 13.8
+  },
+  "elec:servo_knee_fl": {
+   "title": "Knee servo (MG92B-class)",
+   "desc": "Same servo as the hips (one part number for all 8). Drives the shin through a 1:1 horn/pushrod/crank, so the leg stays slim and the servo mass sits in the body.",
+   "group": "actuators",
+   "color": "#2d3138",
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 13.8
+  },
+  "elec:horn_hip_fl": {
+   "title": "Hip horn (round, 20T)",
+   "desc": "Aluminium round horn that comes with the servo; 4 x M2 screws into the thigh.",
+   "group": "actuators",
+   "color": "#b9bec7",
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.0
+  },
+  "elec:horn_knee_fl": {
+   "title": "Knee horn + standoff",
+   "desc": "12 mm single-arm horn on a 3.5 mm standoff, M2 shoulder pin to the pushrod.",
+   "group": "actuators",
+   "color": "#b9bec7",
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.2
+  },
+  "elec:servo_hip_fr": {
+   "title": "Hip servo (MG92B-class)",
+   "desc": "MG92B-class metal-gear micro servo, 3.5 kg-cm (0.34 N-m) stall at 6 V, 0.08 s/60 deg, 13.8 g. Production version ordered with a 4th wire on the potentiometer wiper so the ESP32 reads joint angle. Peak need is 0.15 N-m (self-righting), trot needs about 0.1 N-m: see docs/TORQUE.md.",
+   "group": "actuators",
+   "color": "#2d3138",
+   "explode": [
+    0,
+    -22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 13.8
+  },
+  "elec:servo_knee_fr": {
+   "title": "Knee servo (MG92B-class)",
+   "desc": "Same servo as the hips (one part number for all 8). Drives the shin through a 1:1 horn/pushrod/crank, so the leg stays slim and the servo mass sits in the body.",
+   "group": "actuators",
+   "color": "#2d3138",
+   "explode": [
+    0,
+    -22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 13.8
+  },
+  "elec:horn_hip_fr": {
+   "title": "Hip horn (round, 20T)",
+   "desc": "Aluminium round horn that comes with the servo; 4 x M2 screws into the thigh.",
+   "group": "actuators",
+   "color": "#b9bec7",
+   "explode": [
+    0,
+    -22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.0
+  },
+  "elec:horn_knee_fr": {
+   "title": "Knee horn + standoff",
+   "desc": "12 mm single-arm horn on a 3.5 mm standoff, M2 shoulder pin to the pushrod.",
+   "group": "actuators",
+   "color": "#b9bec7",
+   "explode": [
+    0,
+    -22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.2
+  },
+  "elec:servo_hip_rl": {
+   "title": "Hip servo (MG92B-class)",
+   "desc": "MG92B-class metal-gear micro servo, 3.5 kg-cm (0.34 N-m) stall at 6 V, 0.08 s/60 deg, 13.8 g. Production version ordered with a 4th wire on the potentiometer wiper so the ESP32 reads joint angle. Peak need is 0.15 N-m (self-righting), trot needs about 0.1 N-m: see docs/TORQUE.md.",
+   "group": "actuators",
+   "color": "#2d3138",
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 13.8
+  },
+  "elec:servo_knee_rl": {
+   "title": "Knee servo (MG92B-class)",
+   "desc": "Same servo as the hips (one part number for all 8). Drives the shin through a 1:1 horn/pushrod/crank, so the leg stays slim and the servo mass sits in the body.",
+   "group": "actuators",
+   "color": "#2d3138",
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 13.8
+  },
+  "elec:horn_hip_rl": {
+   "title": "Hip horn (round, 20T)",
+   "desc": "Aluminium round horn that comes with the servo; 4 x M2 screws into the thigh.",
+   "group": "actuators",
+   "color": "#b9bec7",
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.0
+  },
+  "elec:horn_knee_rl": {
+   "title": "Knee horn + standoff",
+   "desc": "12 mm single-arm horn on a 3.5 mm standoff, M2 shoulder pin to the pushrod.",
+   "group": "actuators",
+   "color": "#b9bec7",
+   "explode": [
+    0,
+    22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.2
+  },
+  "elec:servo_hip_rr": {
+   "title": "Hip servo (MG92B-class)",
+   "desc": "MG92B-class metal-gear micro servo, 3.5 kg-cm (0.34 N-m) stall at 6 V, 0.08 s/60 deg, 13.8 g. Production version ordered with a 4th wire on the potentiometer wiper so the ESP32 reads joint angle. Peak need is 0.15 N-m (self-righting), trot needs about 0.1 N-m: see docs/TORQUE.md.",
+   "group": "actuators",
+   "color": "#2d3138",
+   "explode": [
+    0,
+    -22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 13.8
+  },
+  "elec:servo_knee_rr": {
+   "title": "Knee servo (MG92B-class)",
+   "desc": "Same servo as the hips (one part number for all 8). Drives the shin through a 1:1 horn/pushrod/crank, so the leg stays slim and the servo mass sits in the body.",
+   "group": "actuators",
+   "color": "#2d3138",
+   "explode": [
+    0,
+    -22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 13.8
+  },
+  "elec:horn_hip_rr": {
+   "title": "Hip horn (round, 20T)",
+   "desc": "Aluminium round horn that comes with the servo; 4 x M2 screws into the thigh.",
+   "group": "actuators",
+   "color": "#b9bec7",
+   "explode": [
+    0,
+    -22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.0
+  },
+  "elec:horn_knee_rr": {
+   "title": "Knee horn + standoff",
+   "desc": "12 mm single-arm horn on a 3.5 mm standoff, M2 shoulder pin to the pushrod.",
+   "group": "actuators",
+   "color": "#b9bec7",
+   "explode": [
+    0,
+    -22,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.2
+  },
+  "elec:battery": {
+   "title": "2S Li-ion pack, 2 x 18650 (7.2 V, 2500 mAh)",
+   "desc": "18 Wh with protection IC on the main board. Lying low along the belly between the four servo towers keeps the centre of mass low and central. Estimated 60-90 min of active play, ~8 h of watching/idling.",
+   "group": "power",
+   "color": "#3b6fb6",
+   "explode": [
+    0,
+    0,
+    -45
+   ],
+   "kind": "bought",
+   "mass_g": 92.0
+  },
+  "elec:pcb": {
+   "title": "Main board (4-layer, 42 x 56 mm)",
+   "desc": "One board does everything: ESP32-S3 module, 8 servo outputs with angle feedback, 2S charger (IP2326), protection, 6 V / 5 A servo buck, 3.3 V rail, I2S amp, IMU, mic, touch inputs. No USB port: charges through the tail, updates over Wi-Fi, factory-programmed on test pads.",
+   "group": "electronics",
+   "color": "#1f6f43",
+   "explode": [
+    0,
+    0,
+    32
+   ],
+   "kind": "bought",
+   "mass_g": 7.0
+  },
+  "elec:esp32": {
+   "title": "ESP32-S3-WROOM-1-N16R8",
+   "desc": "Dual-core 240 MHz, 16 MB flash, 8 MB PSRAM, Wi-Fi + BLE (pre-certified module). Runs the gait, the face, wake-word and person/pet detection (ESP-DL), and streams the camera to the phone app.",
+   "group": "electronics",
+   "color": "#c9ccd2",
+   "explode": [
+    0,
+    0,
+    40
+   ],
+   "kind": "bought",
+   "mass_g": 2.0
+  },
+  "elec:imu": {
+   "title": "IMU (ICM-42670-P)",
+   "desc": "6-axis IMU: balance, fall detection, \"pick-up\" and petting gestures.",
+   "group": "electronics",
+   "color": "#202226",
+   "explode": [
+    0,
+    0,
+    40
+   ],
+   "kind": "bought",
+   "mass_g": 0.1
+  },
+  "elec:amp": {
+   "title": "I2S amp (MAX98357A)",
+   "desc": "3 W class-D amp for the voice/chirp speaker.",
+   "group": "electronics",
+   "color": "#202226",
+   "explode": [
+    0,
+    0,
+    40
+   ],
+   "kind": "bought",
+   "mass_g": 0.1
+  },
+  "elec:charger": {
+   "title": "2S charger IC (IP2326)",
+   "desc": "Boost-charges the 2S pack from 5 V at the bed contacts, with balancing.",
+   "group": "power",
+   "color": "#202226",
+   "explode": [
+    0,
+    0,
+    40
+   ],
+   "kind": "bought",
+   "mass_g": 0.1
+  },
+  "elec:buck": {
+   "title": "6 V / 5 A servo buck + inductor",
+   "desc": "Synchronous buck from the 2S pack to 6 V for the servos (full MG92B torque).",
+   "group": "power",
+   "color": "#3a3d44",
+   "explode": [
+    0,
+    0,
+    40
+   ],
+   "kind": "bought",
+   "mass_g": 1.5
+  },
+  "elec:mic": {
+   "title": "MEMS microphone (I2S)",
+   "desc": "Hears its name, claps and the wake word; port hole in the top shell above.",
+   "group": "sensors",
+   "color": "#9aa0a8",
+   "explode": [
+    0,
+    0,
+    40
+   ],
+   "kind": "bought",
+   "mass_g": 0.1
+  },
+  "elec:lcd": {
+   "title": "1.47\" IPS face display (172 x 320, ST7789)",
+   "desc": "Landscape behind the smoked visor: draws the two eyes, blinks, moods, and icons (timer, weather, battery). The whole personality lives here.",
+   "group": "expression",
+   "color": "#0b0d10",
+   "explode": [
+    30,
+    0,
+    12
+   ],
+   "kind": "bought",
+   "mass_g": 6.0
+  },
+  "elec:camera": {
+   "title": "Camera, OV2640 160 deg wide (DVP)",
+   "desc": "Sees people, pets, the bed marker and obstacles. Wide lens so the home check-in view covers a room from floor height.",
+   "group": "sensors",
+   "color": "#15171a",
+   "explode": [
+    28,
+    0,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 1.5
+  },
+  "elec:tof": {
+   "title": "ToF distance sensor (VL53L1X)",
+   "desc": "4 m laser ranging through an IR window in the visor: obstacle stop + \"come here\" approach distance.",
+   "group": "sensors",
+   "color": "#30343b",
+   "explode": [
+    28,
+    0,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 0.5
+  },
+  "elec:cliff_l": {
+   "title": "Cliff sensor (IR reflective)",
+   "desc": "Downward IR pair behind each front window: stops Nibbo at table and stair edges.",
+   "group": "sensors",
+   "color": "#5d2f86",
+   "explode": [
+    12,
+    0,
+    -30
+   ],
+   "kind": "bought",
+   "mass_g": 0.2
+  },
+  "elec:cliff_r": {
+   "title": "Cliff sensor (IR reflective)",
+   "desc": "Downward IR pair behind each front window: stops Nibbo at table and stair edges.",
+   "group": "sensors",
+   "color": "#5d2f86",
+   "explode": [
+    12,
+    0,
+    -30
+   ],
+   "kind": "bought",
+   "mass_g": 0.2
+  },
+  "elec:speaker": {
+   "title": "Speaker 20 mm, 8 ohm 1 W",
+   "desc": "Faces down through the belly grille; the floor reflects the sound out. Chirps, purrs and speaks reminders.",
+   "group": "expression",
+   "color": "#2a2c31",
+   "explode": [
+    0,
+    0,
+    -40
+   ],
+   "kind": "bought",
+   "mass_g": 3.0
+  },
+  "elec:touch": {
+   "title": "Touch pad (copper foil on shell inside)",
+   "desc": "ESP32 capacitive touch on the back: pet it and it leans in, purrs and its eyes go soft.",
+   "group": "sensors",
+   "color": "#c7843d",
+   "explode": [
+    0,
+    0,
+    85
+   ],
+   "kind": "bought",
+   "mass_g": 0.5
+  },
+  "elec:tailpad_l": {
+   "title": "Tail charging contacts (gold pads)",
+   "desc": "Two gold-plated pads in the tail tip. Nibbo backs into its bed and the tail lands on the bed's spring contacts.",
+   "group": "power",
+   "color": "#d9a441",
+   "explode": [
+    -45,
+    0,
+    10
+   ],
+   "kind": "bought",
+   "mass_g": 0.2
+  },
+  "elec:tailpad_r": {
+   "title": "Tail charging contacts (gold pads)",
+   "desc": "Two gold-plated pads in the tail tip. Nibbo backs into its bed and the tail lands on the bed's spring contacts.",
+   "group": "power",
+   "color": "#d9a441",
+   "explode": [
+    -45,
+    0,
+    10
+   ],
+   "kind": "bought",
+   "mass_g": 0.2
+  },
+  "elec:bed_pcb": {
+   "title": "Bed board: USB-C in + IR beacon",
+   "desc": "USB-C 5 V in, two spring contacts at tail-tip height, and a modulated IR LED beacon Nibbo homes on when its battery is low.",
+   "group": "dock",
+   "color": "#1f6f43",
+   "explode": [
+    0,
+    -40,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 4.0
+  },
+  "elec:bed_pin_l": {
+   "title": "Bed spring contacts",
+   "desc": "Spring-loaded pogo contacts (5 mm travel) that meet the tail pads.",
+   "group": "dock",
+   "color": "#d9a441",
+   "explode": [
+    0,
+    -40,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 0.3
+  },
+  "elec:bed_pin_r": {
+   "title": "Bed spring contacts",
+   "desc": "Spring-loaded pogo contacts (5 mm travel) that meet the tail pads.",
+   "group": "dock",
+   "color": "#d9a441",
+   "explode": [
+    0,
+    -40,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 0.3
+  },
+  "elec:bed_ir": {
+   "title": "IR beacon LED",
+   "desc": "940 nm LED, coded so Nibbo can tell its bed from a TV remote.",
+   "group": "dock",
+   "color": "#3a1d4d",
+   "explode": [
+    0,
+    -40,
+    0
+   ],
+   "kind": "bought",
+   "mass_g": 0.2
+  }
+ },
+ "labels": [
+  {
+   "key": "part:top_shell",
+   "node": "link:base",
+   "local": [
+    -20.0,
+    30.0,
+    112.0
+   ]
+  },
+  {
+   "key": "part:chassis",
+   "node": "link:base",
+   "local": [
+    -30.0,
+    -38.0,
+    66.0
+   ]
+  },
+  {
+   "key": "part:visor",
+   "node": "link:base",
+   "local": [
+    66.0,
+    -14.0,
+    108.0
+   ]
+  },
+  {
+   "key": "part:tail",
+   "node": "link:base",
+   "local": [
+    -101.0,
+    0.0,
+    80.0
+   ]
+  },
+  {
+   "key": "part:thigh_fl",
+   "node": "link:thigh_fl",
+   "local": [
+    -11.832411965193977,
+    0.0,
+    -17.898010479383927
+   ]
+  },
+  {
+   "key": "part:shin_fl",
+   "node": "link:shin_fl",
+   "local": [
+    9.545335810424756,
+    0.0,
+    -15.674261873500285
+   ]
+  },
+  {
+   "key": "part:foot_fl",
+   "node": "link:shin_fl",
+   "local": [
+    25.179041586125148,
+    0.0,
+    -43.220285538107476
+   ]
+  },
+  {
+   "key": "part:pushrod_fl",
+   "node": "link:thigh_fl",
+   "local": [
+    -18.628802499911956,
+    0.0,
+    -0.7817701863353932
+   ]
+  },
+  {
+   "key": "part:bed",
+   "node": "link:bed",
+   "local": [
+    60.0,
+    -70.0,
+    16.0
+   ]
+  },
+  {
+   "key": "elec:servo_hip_fl",
+   "node": "link:base",
+   "local": [
+    38.5,
+    26.0,
+    88.0
+   ]
+  },
+  {
+   "key": "elec:servo_knee_fl",
+   "node": "link:base",
+   "local": [
+    38.5,
+    26.0,
+    103.0
+   ]
+  },
+  {
+   "key": "elec:battery",
+   "node": "link:base",
+   "local": [
+    0.0,
+    0.005749239362483394,
+    71.5
+   ]
+  },
+  {
+   "key": "elec:pcb",
+   "node": "link:base",
+   "local": [
+    0.0,
+    0.0,
+    84.8
+   ]
+  },
+  {
+   "key": "elec:esp32",
+   "node": "link:base",
+   "local": [
+    7.75,
+    0.0,
+    87.14999999999999
+   ]
+  },
+  {
+   "key": "elec:imu",
+   "node": "link:base",
+   "local": [
+    -12.75,
+    9.5,
+    86.05
+   ]
+  },
+  {
+   "key": "elec:buck",
+   "node": "link:base",
+   "local": [
+    -15.0,
+    17.0,
+    87.6
+   ]
+  },
+  {
+   "key": "elec:mic",
+   "node": "link:base",
+   "local": [
+    -9.0,
+    0.0,
+    86.1
+   ]
+  },
+  {
+   "key": "elec:lcd",
+   "node": "link:base",
+   "local": [
+    59.5,
+    0.0,
+    103.0
+   ]
+  },
+  {
+   "key": "elec:camera",
+   "node": "link:base",
+   "local": [
+    56.75,
+    9.0,
+    88.0
+   ]
+  },
+  {
+   "key": "elec:tof",
+   "node": "link:base",
+   "local": [
+    58.5,
+    -9.0,
+    88.0
+   ]
+  },
+  {
+   "key": "elec:cliff_l",
+   "node": "link:base",
+   "local": [
+    53.0,
+    18.0,
+    62.5
+   ]
+  },
+  {
+   "key": "elec:speaker",
+   "node": "link:base",
+   "local": [
+    -50.993784606094614,
+    0.0,
+    68.75
+   ]
+  },
+  {
+   "key": "elec:touch",
+   "node": "link:base",
+   "local": [
+    -10.0,
+    0.0,
+    111.15
+   ]
+  },
+  {
+   "key": "elec:tailpad_l",
+   "node": "link:base",
+   "local": [
+    -109.99766876919054,
+    2.6,
+    51.8
+   ]
+  },
+  {
+   "key": "elec:bed_pcb",
+   "node": "link:bed",
+   "local": [
+    -117.5,
+    0.0,
+    28.5
+   ]
+  },
+  {
+   "key": "elec:bed_pin_l",
+   "node": "link:bed",
+   "local": [
+    -113.44999999999999,
+    2.600932309085806,
+    30.0
+   ]
+  }
+ ]
+}
