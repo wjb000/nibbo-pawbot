@@ -1,0 +1,37 @@
+{
+ "total_g": 489.4,
+ "molded_g": 241.0,
+ "bought_g": 234.4,
+ "fasteners_wires_g": 14.0,
+ "com_mm": [
+  -3.5,
+  0.1,
+  79.9
+ ],
+ "length_mm": 178,
+ "width_mm": 114,
+ "height_mm": 133,
+ "parts": {
+  "top_shell": 41.6,
+  "chassis": 77.2,
+  "visor": 4.5,
+  "tail": 7.0,
+  "thigh_fl": 17.1,
+  "shin_fl": 7.2,
+  "foot_fl": 1.6,
+  "pushrod_fl": 1.8,
+  "thigh_fr": 17.1,
+  "shin_fr": 7.2,
+  "foot_fr": 1.6,
+  "pushrod_fr": 1.8,
+  "thigh_rl": 17.1,
+  "shin_rl": 7.2,
+  "foot_rl": 1.6,
+  "pushrod_rl": 1.8,
+  "thigh_rr": 17.1,
+  "shin_rr": 7.2,
+  "foot_rr": 1.6,
+  "pushrod_rr": 1.8,
+  "bed": 247.1
+ }
+}
